@@ -13,3 +13,7 @@ Calculadora hehca en python usando funciones.
 2. Multiplicacion
 3. Potencia
 4. Radicacion
+
+# Agregar
+
+- Catcheo de errores
