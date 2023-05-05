@@ -17,3 +17,4 @@ Calculadora hehca en python usando funciones.
 # Agregar
 
 - Catcheo de errores
+- Funcion para preguntar valores

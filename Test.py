@@ -1,3 +1,11 @@
+ask = ""
+valor1 = 0
+valor2 = 0
+out = 0
+
+# La funcion toma valores depurados
+
+
 def addition(valor1, valor2):
     suma = valor1 + valor2
     return suma
@@ -13,7 +21,22 @@ print("------------------")
 print("1------------Suma")
 print("2------------Resta \n")
 
-ask = int(input("Selecione una opcion: "))
+while True:
+    try:
+        ask = int(input("Selecione una opcion: "))
+
+        if ask > 2 or ask < 1:
+            raise Exception
+
+        else:
+            break
+    except ValueError:
+        print("Ingrese un número")
+
+    except Exception:
+        print(
+            f"No se encontró la opcion {ask}, ingrese una válida")
+
 
 match ask:
     case 1:
