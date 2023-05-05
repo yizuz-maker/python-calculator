@@ -1,9 +1,19 @@
+from os import system
+
 ask = ""
 valor1 = 0
 valor2 = 0
 out = 0
 
 # La funcion toma valores depurados
+
+
+def message():
+    system.cls()
+    print("Python Calculator")
+    print("------------------")
+    print("1------------Suma")
+    print("2------------Resta \n")
 
 
 def addition(valor1, valor2):
@@ -16,10 +26,7 @@ def subtraction(valor1, valor2):
     return resta
 
 
-print("Python Calculator")
-print("------------------")
-print("1------------Suma")
-print("2------------Resta \n")
+message()
 
 while True:
     try:
@@ -40,6 +47,7 @@ while True:
 
 match ask:
     case 1:
+        print("\n")
         print("-----Suma-----")
         valor1 = int(input("Ingrese valor 1: "))
         valor2 = int(input("Ingrese valor 2: "))
@@ -48,6 +56,7 @@ match ask:
         print(f"El resultado es {out}")
 
     case 2:
+        print("\n")
         print("-----Resta-----")
         valor1 = int(input("Ingrese valor 1: "))
         valor2 = int(input("Ingrese valor 2: "))
