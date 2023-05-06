@@ -22,6 +22,25 @@ def input_valores():
         return input_valores()
 
 
+def options():
+    try:
+        ask = int(input("Selecione una opcion: "))
+
+        if ask > 2 or ask < 1:
+            raise Exception
+        else:
+            return ask
+    except ValueError:
+        print("Ingrese un número")
+
+        return options()
+
+    except Exception:
+
+        print(f"No se encontró la opcion {ask}, ingrese una válida")
+        return options()
+
+
 def addition(element1):
 
     valor1 = element1[0]
@@ -35,36 +54,22 @@ def subtraction(element1):
     return resta
 
 
-message()
+mensaje = message()
+ask = options()
 
-while True:
-    try:
-        ask = int(input("Selecione una opcion: "))
-        if ask > 2 or ask < 1:
-            raise Exception
-        else:
-            break
-
-    except ValueError:
-        print("Ingrese un número")
-
-    except Exception:
-        print(f"No se encontró la opcion {ask}, ingrese una válida")
+os.system("cls")
+print("-----Suma-----" if ask == 1 else "-----Resta-----")
 
 valores = input_valores()
 
 match ask:
     case 1:
-        os.system("cls")
-        print("-----Suma-----")
 
         out = addition(valores)
 
         print(f"El resultado es {out}")
 
     case 2:
-        os.system("cls")
-        print("-----Resta-----")
 
         out = subtraction(valores)
 
