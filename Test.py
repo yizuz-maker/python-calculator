@@ -51,13 +51,13 @@ while True:
     except Exception:
         print(f"No se encontró la opcion {ask}, ingrese una válida")
 
+valores = input_valores()
 
 match ask:
     case 1:
         os.system("cls")
         print("-----Suma-----")
 
-        valores = input_valores()
         out = addition(valores)
 
         print(f"El resultado es {out}")
@@ -66,7 +66,6 @@ match ask:
         os.system("cls")
         print("-----Resta-----")
 
-        valores = input_valores()
         out = subtraction(valores)
 
         print(f"El resultado es {out}")
