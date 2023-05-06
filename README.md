@@ -1,6 +1,6 @@
 # Python Calculator (Using GIT)
 
-Calculadora hecha en python usando funciones.
+Calculadora hecha en python usando funciones. Este proyecto es para mejorar los saberes adquiridos del curso de Git
 
 ### Funcionalidades PRINCIPALES de la Calculadora
 
@@ -16,5 +16,5 @@ Calculadora hecha en python usando funciones.
 
 # Agregar
 
-- Catcheo de errores
-- Funcion para preguntar valores
+- ~~Catcheo de errores~~
+- ~~Funcion para preguntar valores~~
