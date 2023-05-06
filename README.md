@@ -1,6 +1,6 @@
 # Python Calculator (Using GIT)
 
-Calculadora hehca en python usando funciones.
+Calculadora hecha en python usando funciones.
 
 ### Funcionalidades PRINCIPALES de la Calculadora
 
